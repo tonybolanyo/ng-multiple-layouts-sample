@@ -5,10 +5,15 @@ import { BackofficeRoutingModule } from './backoffice-routing.module';
 import { BackheaderComponent } from './shared/backheader/backheader.component';
 import { BackfooterComponent } from './shared/backfooter/backfooter.component';
 import { BackLayoutComponent } from './shared/back-layout/back-layout.component';
+import { BackSamplePageComponent } from './pages/back-sample-page/back-sample-page.component';
 
 
 @NgModule({
-  declarations: [BackheaderComponent, BackfooterComponent, BackLayoutComponent],
+  declarations: [
+    BackfooterComponent,
+    BackheaderComponent,
+    BackLayoutComponent,
+    BackSamplePageComponent],
   imports: [
     CommonModule,
     BackofficeRoutingModule
