@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ng-multiple-layouts-sample"
+    }
+  },
+  "defaultProject": "ng-multiple-layouts-sample",
+  "cli": {
+    "analytics": false
+  }
 }
