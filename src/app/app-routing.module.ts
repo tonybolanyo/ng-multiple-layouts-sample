@@ -2,10 +2,11 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { BACK_ROUTES } from './routes/backoffice-layout-routes';
+import { FULLPAGE_ROUTES } from './routes/no-layout-routes';
 import { FRONT_ROUTES } from './routes/frontend-layout-routes';
-import { BackSamplePageComponent } from './backoffice/pages/back-sample-page/back-sample-page.component';
-import { FrontLayoutComponent } from './frontend/shared/front-layout/front-layout.component';
+
 import { BackLayoutComponent } from './backoffice/shared/back-layout/back-layout.component';
+import { FrontLayoutComponent } from './frontend/shared/front-layout/front-layout.component';
 
 const routes: Routes = [
   {
@@ -18,6 +19,10 @@ const routes: Routes = [
     component: BackLayoutComponent,
     children: BACK_ROUTES,
   },
+  {
+    path: 'full',
+    children: FULLPAGE_ROUTES,
+  }
 ];
 
 @NgModule({
